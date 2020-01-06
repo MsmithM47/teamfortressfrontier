@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	font-family: "arial",'helvetica',sans-serif;
+	margin: 0;
+	padding:0;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-image: url("../img/tff_background.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+	background-size: contain;
+}
+/*comma's can let you effect multiple divs at once with the same code*/
+
+.banner {
+	width:100%;
+	height:auto;
+}
+
+#pagehead { 
+    width: 100%;
+    overflow: hidden; 
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top:2%;
+    width:65%;
+    height: 50%;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+}
+
+#nav a {
+    padding:.3%;
+}
+
+#classes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    
+}
+
+#classes div {
+    padding: .3%;
+}
+
+#story {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+#blurb {
+    display: flex;
+    justify-content: flex-end;
+    border: 5px solid black;
+    background:#FFFDF7;
+    margin-bottom: 5%;
+}
+#blurb p {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+}
+
+#content {
+    
+}
+
+#lumberhero, #gravelhero, #steelhero {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3%;
+}
+
+.lumber, .gravel, .steel {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+#lumbertext, #graveltext, #steeltext {  
+    border: 5px solid black;
+    background:#FFFDF7;
+    margin-left: .5%;
+	padding:2%;
+	text-align: inherit;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 2%;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+}
+
+#wepmain {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0 1% 0;
+}
+
+#wepmain img{
+	width:100%;
+	height: auto;
+	max-width: 800px;
+}
+
+#wep {
+    display:block;
+    justify-content: center;
+    max-width: 80%;
+    margin-left:10%;
+}
+
+.wep1, .wep2, .wep3, .wep4, .wep5, .wep6 {
+    padding:1%;
+}
+
+#store {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#mediavideo {
+    display: flex;
+    justify-content: center;
+}
+
+#steam {
+    display: flex;
+    justify-content: center;
+    padding-bottom:2%;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+	width:100%;
+}
+
+form {
+  border: 10px solid black;
+  font-family: Arial;
+    margin:2% 5% 5% 5%;
+    
+}
+
+.container {
+  padding: 10px;
+  background-color: #FFFDF7;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: darkorange;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* For mobile phones */
+/* media queries allow for a format change on smaller resolutions*/
+
+@media screen and (max-width: 800px){
+    
+#lumberhero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+}
+
+#gravelhero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+}
+
+#steelhero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+}   
+	
+#wep {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+	margin-right: 10%;
+	
+}
+	
+#wepmain {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0 1% 0;
+}
+	
+#nav {
+    display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+	max-width: 80%;
+	margin-left: 10%;
+}
+	
+}
+
+@media screen and (max-width: 1024px){
+    
+#lumberhero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+	
+}
+
+#gravelhero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+}
+
+#steelhero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+}   
+	
+#wep {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+	margin-right: 10%;
+	
+}
+	
+#wepmain {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0 1% 0;
+}
+}
